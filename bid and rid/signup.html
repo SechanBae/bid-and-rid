@@ -1,0 +1,43 @@
+<!--I, Sechan Bae, 000803348 certify that this material is my original work.
+    No other person's work has been used without due acknowledgement-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign-Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bidandrid.css">
+    <script src="js/signup.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="myitems.php">My Items on Sale</a></li>
+            <li><a href="mybids.php">My Bids</a></li>
+            <li><a href="sellitem.php">Add Item for Sale</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="signup" class="signupform">
+            <p id="message"></p>
+            <label for="fname">First name: </label>  
+            <input type="text" id="fname" required><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" required><br>
+            <label for="username">Username (5-15 characters, No speical characters): </label>
+            <input type="text" minlength="5" maxlength="15" id="username" required><br>
+            <label for="password">Password (8-20 characters): </label>
+            <input type="password" minlength="8" maxlength="20" id="password"  required><br>
+            <label for="password">Password confirm: </label>
+            <input type="password" minlength="8" maxlength="20" id="passwordconfirm"  required><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required><br>
+            <input type="submit" id="login" value="Sign-Up">
+        </form>
+    </main>
+</body>
+
+</html>

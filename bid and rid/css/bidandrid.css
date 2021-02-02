@@ -1,0 +1,124 @@
+nav{
+    position: absolute;
+    display: table;
+    top:150px;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+    
+}
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    display:inline-block;
+}
+nav li{
+    margin-left: 20px;
+    display: inline;
+    padding:10px 10px;
+}
+
+.login{
+    position: absolute;
+    top:25px;
+    left:10px;
+    padding:15px 15px;
+    border:3px solid blue;
+}
+.login h2{
+    font-size: small;
+    color: red;
+}
+.search{
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    margin-top: 190px;
+}
+.search{
+    text-align: center;
+}
+.listcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    row-gap: 45px;
+    column-gap: 40px;
+}
+.item{
+    display:grid;
+    margin-top: 30px;
+    border:3px solid blue;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 25px 15px 60px 20px 20px 30px 20px;
+    padding:10px;
+    grid-template-areas:
+      "itemname itemname itemname"
+      "seller seller seller"
+      "description description description"
+      ". starting starting"
+      ". highest highest"
+      ". partone parttwo"
+      "warning warning warning";
+}
+
+.itemname{
+    grid-area:itemname;
+    font-size: x-large;
+}
+.seller{ 
+    grid-area:seller;
+}
+.description{ 
+    grid-area:description;
+    word-wrap: break-word;
+}
+.highest{ 
+    grid-area:highest; 
+}
+.starting{ 
+    grid-area:starting; 
+}
+.bidfield{ 
+    grid-area:partone; 
+}
+.bidbutton{ 
+    grid-area:parttwo; 
+}
+.warning{
+    grid-area:warning;
+    color: red;
+}
+
+.acceptbid{
+    grid-area:partone; 
+}
+
+.deleteitem{
+    grid-area:parttwo; 
+
+}
+.sellform p{
+    color: red;
+}
+
+.signupform input{
+    margin: 5px 5px;
+}
+.signupform{
+    border:3px solid blue;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color:#ecf7fe;
+    color:#0172ba;
+}
